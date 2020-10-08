@@ -6,7 +6,12 @@ class InstanceTest extends TestCase
 {
     public function testInstance()
     {
-        $class = 'Javanile\\VtigerPsr4\\Views\\IndexView';
-        $instance = new $class;
+        $classes = [
+            '\\Javanile\\VtigerPsr4\\Views\\IndexView'
+        ];
+
+        foreach ($classes as $class) {
+            $this->assertInstanceOf($class, new $class);
+        }
     }
 }

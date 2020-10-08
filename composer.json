@@ -24,6 +24,7 @@
     "ext-mysqli": "*"
   },
   "require-dev": {
+    "javanile/php-global-var": "*",
     "phpunit/phpunit": "^6.5"
   }
 }
